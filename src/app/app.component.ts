@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'dia4';
+export class AppComponent implements OnInit {
+  items: any;
+  searchInput = '';
+
+  constructor() {}
+
+  ngOnInit(): void { }
+
 }
